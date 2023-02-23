@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Creating\**" />
+    <Compile Remove="Data Structures Imp\**" />
+    <EmbeddedResource Remove="Creating\**" />
+    <EmbeddedResource Remove="Data Structures Imp\**" />
+    <None Remove="Creating\**" />
+    <None Remove="Data Structures Imp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AirportManager.cs" />
+    <Compile Remove="ComplexObject.cs" />
+    <Compile Remove="Repositories\IGraghNode.cs" />
+    <Compile Remove="Repositories\ITerminal.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj" />
+  </ItemGroup>
+
+</Project>
