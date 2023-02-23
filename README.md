@@ -26,4 +26,5 @@ Client side - Angular
     • The program can be tested simply by opening the “Simulator” project in the “FinalProj” project and updating the timer for sending new flights to the Api faster.
     • The program based on multithreading and asynchronous processes
     
+    The image diagram represents the flights directions and terminals locations => that represented by Graph Data Structure in the API/Logic/Data Structures  folder.  
 ![image](https://user-images.githubusercontent.com/106904639/220820763-05c4e320-b597-4029-98f3-26da08340a94.png)
