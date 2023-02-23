@@ -1,0 +1,73 @@
+<div
+  style="
+    background-image: url(https://cdn.hswstatic.com/gif/why-is-sky-blue.jpg);
+  "
+>
+  <app-terminal-component>
+    <div *ngFor="let flight of flights">
+      <div
+        y
+        *ngIf="flight.terminalNumber === 1"
+        style="margin: 50px 0 0px 1350px"
+      >
+        <img #img [src]="src2" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div
+        *ngIf="flight.terminalNumber === 2"
+        style="margin: 50px 0 0px 1050px"
+      >
+        <img #img [src]="src2" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div *ngIf="flight.terminalNumber === 3" style="margin: 50px 0 0px 700px">
+        <img #img [src]="src2" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div *ngIf="flight.terminalNumber === 4" style="margin: 50px 0 0px 200px">
+        <img #img [src]="src2" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3
+          [ngStyle]="flight.isDeparture ? { color: 'green' } : { color: 'red' }"
+        >
+          Flight number: {{ flight?.number }}
+        </h3>
+      </div>
+      <div
+        *ngIf="flight.terminalNumber === 5"
+        style="margin: 300px 0 0px 100px"
+      >
+        <img #img [src]="src" style="transform: rotate(90deg)" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div
+        *ngIf="flight.terminalNumber === 6"
+        style="margin: 550px 0 0px 120px"
+      >
+        <img #img [src]="src" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div
+        *ngIf="flight.terminalNumber === 7"
+        style="margin: 550px 0 0px 450px"
+      >
+        <img #img [src]="src" style="transform: rotate(-90deg)" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+      <div
+        *ngIf="flight.terminalNumber === 8"
+        style="margin: 300px 0 0px 450px"
+      >
+        <img #img [src]="src" style="transform: rotate(-90deg)" />
+        <h3>Terminal number: {{ flight?.terminalNumber }}</h3>
+        <h3>Flight number: {{ flight?.number }}</h3>
+      </div>
+    </div>
+  </app-terminal-component>
+</div>
